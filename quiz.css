@@ -1,0 +1,46 @@
+*{
+margin: 5px;
+padding: 0;
+}
+body{
+
+background: url(level.jpeg) no-repeat center center fixed;
+background-position: cover;
+background-size: 1400px 900px;
+font-family: cursive;
+}
+h1{
+  padding-top: 5px;
+  text-align: center;
+   margin-left:100px;
+   margin-right: 120px;
+ }
+
+ div{
+  padding-left: 100px;
+  }
+input[type="button"]
+{
+       background-color: #4CAF50;
+    border: chocolate;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.easy1{
+margin: auto;
+
+
+}
+input[type=radio]{
+  margin-left: 40%;
+}
+p{
+  text-align: center;
+}

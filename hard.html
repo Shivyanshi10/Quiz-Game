@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to easy level</title>
+<link rel="stylesheet" type="text/css" href="quiz.css">
+<script type="text/javascript" src="easy.js"></script>
+</head>
+<body>
+<h1>All The Best</h1>
+<div class="easy">
+<p>1.What is the size limit of data to be stored on a floppy disk?</p>
+	<input type="radio" name="question1" value=" 250KB to 360 KB">A. 250KB to 360 KB<br>
+ <input type="radio" name="question1" value="360 KB to 1 GB">B.360 KB to 1 GB<br>
+ <input type="radio" name="question1" value="360 KB to 2 GB" >C.360 KB to 2 GB <br>
+ <input type="radio" name="question1" value=" 360 KB to 2.88 MB"id="correct1">D. 360 KB to 2.88 MB<br>
+
+
+
+<p>2.What is the full form of UDF ?</p>
+ <input type="radio" name="question2" value="Universal data frequency">A.Universal data frequency<br>
+ <input type="radio" name="question2" value=" Unique disk format">B. Unique disk format<br>
+ <input type="radio" name="question2" value="Universal disk format">C.Universal disk format<br>
+ <input type="radio" name="question2" value=" Undated disk format" id="correct2">D. Undated disk format<br>
+
+
+
+
+<p>3.What is the full form of HIDS?</p>
+<input type="radio" name="question3" value=" Host Based Intrusion Detection System"id="correct3">A. Host Based Intrusion Detection System<br>
+<input type="radio" name="question3" value=" Housing Intruder Detection System">B. Housing Intruder Detection System<br>
+<input type="radio" name="question3" value=" Host In Device Server">C. Host In Device Server<br>
+ <input type="radio" name="question3" value="None of the Above.">D.None of the Above.<br>
+
+
+<p>4.Which of the following techniques is used by UMTS?</p>
+<input type="radio" name="question4" value="FDMA" >A.FDMA <br>
+ <input type="radio" name="question4" value="CDMA" id="correct4">B.CDMA<br>
+ <input type="radio" name="question4" value="TDMA">C.TDMA<br>
+ <input type="radio" name="question4" value=" SDMA">D. SDMA<br>
+
+
+
+<p>5.What does MMS stand for?</p>
+ <input type="radio" name="question5" value=" Multimedia Mobile Service">A. Multimedia Mobile Service<br>
+<input type="radio" name="question5" value=" Media on Mobile Service">B. Media on Mobile Service<br>
+ <input type="radio" name="question5" value="Multimedia Messaging Service" id="correct5">C.Multimedia Messaging Service<br>
+ <input type="radio" name="question5" value="Multiple Mobile Settings">D.Multiple Mobile Settings<br>
+<input type="button" name="" value="Next" onclick="check()">
+</div>
+<script>
+	function check(){
+
+
+	var score=0;
+	if(document.getElementById('correct1').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct2').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct3').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct4').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct5').checked)
+	{
+		score++;
+	}
+	alert("Your Score is:"+score);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to easy level</title>
+<link rel="stylesheet" type="text/css" href="quiz.css">
+<script type="text/javascript" src="easy.js"></script>
+</head>
+<body>
+<h1>All The Best</h1>
+<div class="easy">
+<p>1.Which of the following is the 1's complement of 10?:</p>
+	<input type="radio" name="question1" value="01"id="correct1">A.01 <br>
+ <input type="radio" name="question1" value="110">B.11<br>
+ <input type="radio" name="question1" value="11" >C.11 <br>
+ <input type="radio" name="question1" value="10">D.10<br>
+
+
+
+<p>2.Which part interprets program instructions and initiate control operations. :</p>
+ <input type="radio" name="question2" value="Input">A.Input<br>
+ <input type="radio" name="question2" value="Storage Unit">B.Storage Unit <br>
+ <input type="radio" name="question2" value="Logic Unti">C.Logic Unit  <br>
+ <input type="radio" name="question2" value="Control Unit" id="correct2">D.Control Unit<br>
+
+
+
+
+<p>3.The time required for the fetching and execution of one simple machine instruction is:</p>
+<input type="radio" name="question3" value="Delay time">A.Delay time<br>
+<input type="radio" name="question3" value="CPU cycle"id="correct3">B.CPU cycle<br>
+<input type="radio" name="question3" value="Real time">C.Real time <br>
+ <input type="radio" name="question3" value="Seek time">D.Seek time<br>
+
+
+<p>4.	
+Binary numbers need more places for counting because:</p>
+<input type="radio" name="question4" value="They are always big numbers" >A.They are always big numbers <br>
+ <input type="radio" name="question4" value="Any no. of 0's can be added in front of them">B.Any no. of 0's can be added in front of them<br>
+ <input type="radio" name="question4" value="Binary base is small" id="correct4">C.Binary base is small<br>
+ <input type="radio" name="question4" value="0's and l's have to be properly spaced apart">D.0's and l's have to be properly spaced apart<br>
+
+
+
+<p>5.Any type of storage that is used for holding information between steps in its processing is:</p>
+ <input type="radio" name="question5" value="CPU">A.CPU<br>
+<input type="radio" name="question5" value="Primary storage">B.Primary storage<br>
+ <input type="radio" name="question5" value="Intermediate storage" id="correct5">C.Intermediate storage<br>
+ <input type="radio" name="question5" value="Internal storage">D.Internal storage<br>
+<input type="button" name="" value="Next" onclick="check()">
+</div>
+<script>
+	function check(){
+
+
+	var score=0;
+	if(document.getElementById('correct1').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct2').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct3').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct4').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct5').checked)
+	{
+		score++;
+	}
+	alert("Your Score is:"+score);
+}
+</script>
+</body>
+</html>

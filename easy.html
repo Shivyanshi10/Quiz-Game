@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to easy level</title>
+<link rel="stylesheet" type="text/css" href="quiz.css">
+<script type="text/javascript" src="easy.js"></script>
+</head>
+<body>
+<h1><marquee>All The Best</marquee></h1>
+<div class="easy1">
+<p>1.Name of the screen that recognizes touch input is:</p>
+	<input type="radio" name="question1" value="Recog screen">A.Recog screen <br>
+ <input type="radio" name="question1" value="Point Screen">B.Point Screen <br>
+ <input type="radio" name="question1" value="Touch Screen" id="correct1">C.Touch Screen <br>
+ <input type="radio" name="question1" value="Android Screen">D.Android Screen<br>
+
+<br>
+
+<p>2.Computer Moniter is also known as :</p>
+ <input type="radio" name="question2" value="DVU">A.DVU <br>
+ <input type="radio" name="question2" value="UVD">B.UVD <br>
+ <input type="radio" name="question2" value="VDU" id="correct2">C.VDU  <br>
+ <input type="radio" name="question2" value="CCTV">D.CCTV  <br>
+
+<br>
+
+
+<p>3.The printed output from a computer is called:</p> 
+<input type="radio" name="question3" value="Copy">A.Copy  <br>
+<input type="radio" name="question3" value="Soft Copy">B.Soft Copy<br>
+<input type="radio" name="question3" value="Hard Copy" id="correct3">C.Hard Copy <br>
+ <input type="radio" name="question3" value="Paper">D.Paper<br>
+
+<br>
+
+<p>4.Eight Bits make up a</p>
+<input type="radio" name="question4" value="byte" id="correct4">A.byte <br>
+ <input type="radio" name="question4" value="megabyte">B.megabyte<br>
+ <input type="radio" name="question4" value="kilobyte">C.kilobyte<br>
+ <input type="radio" name="question4" value="None">D.None<br>
+
+<br>
+
+
+<p>5.Which one is the result of the output given by a computer</p>
+ <input type="radio" name="question5" value="Data">A.Data <br>
+<input type="radio" name="question5" value="Instruction">B.Instruction<br>
+ <input type="radio" name="question5" value="Information" id="correct5">C.Information <br>
+ <input type="radio" name="question5" value="Excursion">D.Excursion <br>
+<input type="button" name="" value="Next" onclick="check()">
+</div>
+<script>
+	function check(){
+
+
+	var score=0;
+	if(document.getElementById('correct1').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct2').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct3').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct4').checked)
+	{
+		score++;
+	}
+	if(document.getElementById('correct5').checked)
+	{
+		score++;
+	}
+	alert("Your Score is:"+score);
+}
+</script>
+</body>
+</html>
